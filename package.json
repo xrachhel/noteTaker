@@ -1,0 +1,23 @@
+{
+  "name": "notetaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrachhel/noteTaker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrachhel/noteTaker/issues"
+  },
+  "homepage": "https://github.com/xrachhel/noteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
