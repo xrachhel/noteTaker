@@ -40,6 +40,8 @@ app.post("/api/notes", function(req, res){
         if(err) throw err
         var note = JSON.parse(data)
         note.push(newNote)
+        note.forEach((item, i) => item.id = i + 1)
+        console.log(note)
 
            fs.writeFile('db/db.json', JSON.stringify(note), 'utf8', function(err){
            if(err) throw err
@@ -49,8 +51,48 @@ app.post("/api/notes", function(req, res){
     })
     res.json(newNote)
 })
-app.delete("api/notes/:id", function(req, res){
-    
+// app.delete("api/notes/:id", function(req, res){
+//     var chosen = req.params.id
+//     fs.readFile('db/db.json', 'utf8', function(err, data){
+//         var note = JSON.parse(data)
+//         console.log(note)
+//         var index = note.map(x => {
+//             return x.Id;
+//           }).indexOf(note);
+//           note.splice(index, 1);
+//           console.log(note)
+//           note.push(chosenNote)
+  
+//         // var index = chosen - 1
+//         // var spliced = note.splice(index, 1)
+//         // console.log(spliced)
+//         // for (var i = 0; i < note.length; i++){
+//         //     if(note[i].id === chosen){
+//         //         return note[i]={}
+//         //     }
+//         // }
+//         fs.writeFile('db/db.json', JSON.stringify(note), 'utf8', function(err){
+//             if(err) throw err
+//             console.log("deleted")
+//         })
+//     })
+//     res.json(chosen)
+// })
+app.delete('/api/notes/:id', function (req, res) {
+    var chosenNote = req.params.id
+    console.log(chosenNote)
+    fs.readFile("db/db.json", "utf8", function (err, data) {
+        console.log('delet1')
+        if (err) throw err
+        var note = JSON.parse(data)
+        var index = parseInt(chosenNote) - 1
+        note.splice(index, 1);
+        fs.writeFile('db/db.json', JSON.stringify(note), 'utf8', function (err) {
+            if (err) throw err
+            console.log('deletedone2')
+        })
+    })
+    res.send(chosenNote)
 })
 
 
