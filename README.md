@@ -16,7 +16,7 @@ This application allows users to be able to save, write, and delete notes so tha
 1. Navigate into noteTaker file in terminal
 2. run 'npm install' to install dependencies (express) needed for this application
 3. Run 'npm start' in terminal, a message saying 'APP listening on PORT 3000' will be displayed. This means the application is running on your server.
-4. Type in 'localhost:3000' in your browser
+4. Type in 'localhost:3000' in your browser, and the site will appear.
 
 ![gif](public/assets/siteDemo.gif)
 
