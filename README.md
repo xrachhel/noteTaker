@@ -8,8 +8,8 @@ This application allows users to be able to save, write, and delete notes so tha
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): used for structuring and creating elements on the DOM
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): used to style html elements on the page
-* [Javscript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): high level programming language
-* [Node.js](https://developer.mozilla.org/en-US/docs/Web/API/Node): Javascript runtime, allows users to run Javascript on the server
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): high level programming language
+* [Node.js](https://developer.mozilla.org/en-US/docs/Web/API/Node): JavaScript runtime, allows users to run JavaScript on the server
 * [Express](https://expressjs.com/): Web framwork for Node.js
 
 ## Demo
