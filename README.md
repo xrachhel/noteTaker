@@ -13,6 +13,10 @@ This application allows users to be able to save, write, and delete notes so tha
 * [Express](https://expressjs.com/): Web framwork for Node.js
 
 ## Demo
+[Visit the Deployed Site](https://notetaker-ry.herokuapp.com/)
+
+Or
+
 1. Navigate into noteTaker file in terminal
 2. run 'npm install' to install dependencies (express) needed for this application
 3. Run 'npm start' in terminal, a message saying 'APP listening on PORT 3000' will be displayed. This means the application is running on your server.
