@@ -7,7 +7,7 @@ var $noteList = $(".list-container .list-group");
 // activeNote is used to keep track of the note in the textarea
 var activeNote = {};
 
-// A function for getting all notes from the db
+// Getting all notes from the db
 var getNotes = function() {
   return $.ajax({
     url: "/api/notes",
@@ -15,7 +15,7 @@ var getNotes = function() {
   });
 };
 
-// A function for saving a note to the db
+// Saving a note to the db
 var saveNote = function(note) {
   return $.ajax({
     url: "/api/notes",
@@ -24,7 +24,7 @@ var saveNote = function(note) {
   });
 };
 
-// A function for deleting a note from the db
+// Deleting a note from the db
 var deleteNote = function(id) {
   return $.ajax({
     url: "api/notes/" + id,
@@ -55,7 +55,6 @@ var handleNoteSave = function() {
     title: $noteTitle.val(),
     text: $noteText.val()
   };
-
   saveNote(newNote).then(function(data) {
     getAndRenderNotes();
     renderActiveNote();
@@ -70,11 +69,9 @@ var handleNoteDelete = function(event) {
   var note = $(this)
     .parent(".list-group-item")
     .data();
-
   if (activeNote.id === note.id) {
     activeNote = {};
   }
-
   deleteNote(note.id).then(function() {
     getAndRenderNotes();
     renderActiveNote();
@@ -87,7 +84,7 @@ var handleNoteView = function() {
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// Sets the activeNote to an empty object and allows the user to enter a new note
 var handleNewNoteView = function() {
   activeNote = {};
   renderActiveNote();
@@ -103,7 +100,7 @@ var handleRenderSaveBtn = function() {
   }
 };
 
-// Render's the list of note titles
+// Renders the list of note titles
 var renderNoteList = function(notes) {
   $noteList.empty();
 
@@ -117,11 +114,9 @@ var renderNoteList = function(notes) {
     var $delBtn = $(
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
-
     $li.append($span, $delBtn);
     noteListItems.push($li);
   }
-
   $noteList.append(noteListItems);
 };
 
