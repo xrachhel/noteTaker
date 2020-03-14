@@ -53,7 +53,7 @@ This portion of the script file displays the API route for posting a new note us
 ## Authors
 
 **Rachel Yeung**
-* [Portfolio](https://xrachhel.github.io/updatedPortfolio/)
+* [Portfolio](https://rachelyeung.herokuapp.com/)
 * [Github](https://github.com/xrachhel)
 * [LinkedIn](https://www.linkedin.com/in/rachel-yeung-814986159/)
 
