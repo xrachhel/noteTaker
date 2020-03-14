@@ -1,16 +1,6 @@
 # Note Taker
 
-## Description
 This application allows users to be able to save, write, and delete notes so that they can keep track of tasks that need to be completed. The Note Taker app uses an Express back-end and will save and retrieve note data from a JSON file, utilizing API routes.
-
-
-## Technologies Used
-
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): used for structuring and creating elements on the DOM
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): used to style html elements on the page
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): high level programming language
-* [Node.js](https://developer.mozilla.org/en-US/docs/Web/API/Node): JavaScript runtime, allows users to run JavaScript on the server
-* [Express](https://expressjs.com/): Web framwork for Node.js
 
 ## Demo
 [Visit the Deployed Site](https://notetaker-ry.herokuapp.com/)
@@ -24,9 +14,15 @@ Or
 
 ![gif](public/assets/siteDemo.gif)
 
+## Technologies Used
 
-## Code Snippet
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): used for structuring and creating elements on the DOM
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): used to style html elements on the page
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): high level programming language
+* [Node.js](https://developer.mozilla.org/en-US/docs/Web/API/Node): JavaScript runtime, allows users to run JavaScript on the server
+* [Express](https://expressjs.com/): Web framwork for Node.js
 
+## Code snippet
 ```
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
